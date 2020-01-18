@@ -1,0 +1,23 @@
+{
+  "name": "coach-buddy-api",
+  "version": "1.0.0",
+  "description": "API to save data to database",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "start": "ts-node dist/server.ts",
+    "build": "tsc -p ."
+  },
+  "author": "Felix Koschmidder",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.1.6",
+    "express": "^4.17.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
