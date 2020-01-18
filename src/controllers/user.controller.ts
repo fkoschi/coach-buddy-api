@@ -4,6 +4,7 @@ import Controller   from 'interfaces/controller.interface'
 
 class UserController implements Controller {
 
+  public path = '/user'
   public router = express.Router()
 
   public users = [
@@ -26,8 +27,8 @@ class UserController implements Controller {
   }
 
   public initRoutes() {
-    this.router.get('/user', this.getAllUser)
-    this.router.get('/user/:id', this.getUserById)
+    this.router.get('/', this.getAllUser)
+    this.router.get('/:id', this.getUserById)
   }
 
   getAllUser = (req: Request, res: express.Response, next: express.NextFunction) => {
